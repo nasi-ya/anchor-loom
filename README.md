@@ -18,11 +18,13 @@ consistent sprite sheet without sending your artwork to a server.
 
 ## Status
 
-Version 1.0 is prepared and has passed local core and browser workflow checks.
-**A public purchase/download page is not yet available.** This repository is the
-product showcase and issue tracker. The commercial application source and paid
-distribution package are not included here. A purchase link will be added after
-seller setup and checkout verification.
+Version 1.0 is available on itch.io for **$5 USD**.
+
+[Buy Anchor Loom on itch.io](https://nasi-tools.itch.io/anchor-loom)
+
+The application has passed local core and browser workflow checks. This repository
+contains the product showcase and issue tracker. The commercial application source
+and paid distribution package are not included here.
 
 ## Important limitations
 
@@ -48,3 +50,4 @@ operating system, input dimensions and steps, but do not upload private or
 unlicensed artwork. No response-time or future-feature guarantee is offered.
 
 This repository does not grant a license to the commercial application.
+
