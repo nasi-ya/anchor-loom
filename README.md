@@ -26,6 +26,17 @@ The application has passed local core and browser workflow checks. This reposito
 contains the product showcase and issue tracker. The commercial application source
 and paid distribution package are not included here.
 
+## Start after download
+
+1. Download the ZIP from itch.io and extract the whole folder.
+2. Open `index.html` in desktop Chrome or Edge. Keep `core.js` and `app.js` beside it.
+3. Click **Load sample animation**, then **Play**, to try the included example.
+4. Import your PNG frames or a uniformly divided sheet. Compare original and aligned motion, then adjust individual X/Y offsets if needed.
+5. Choose **Export PNG + frames ZIP** for the output. Use **Save editable project** before closing if you want to resume later.
+
+No terminal commands or Node.js installation are needed. The GitHub download
+contains this showcase, not the paid application; use the itch.io purchase link above.
+
 ## Important limitations
 
 Automatic alignment uses alpha bounds, not anatomy. It can remove intentional
