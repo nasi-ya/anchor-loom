@@ -26,6 +26,10 @@ The application has passed local core and browser workflow checks. This reposito
 contains the product showcase and issue tracker. The commercial application source
 and paid distribution package are not included here.
 
+## Free guide: stop unwanted sprite jitter
+
+Before buying a tool, follow the [PNG animation alignment checklist](docs/png-sprite-animation-alignment-guide.md) to identify whether the problem is alignment jitter or intentional motion. The checklist is free and does not require an account.
+
 ## Start after download
 
 1. Download the ZIP from itch.io and extract the whole folder.
