@@ -5,7 +5,7 @@
 Compare original and aligned motion, adjust individual frames, and export a
 consistent sprite sheet without sending your artwork to a server.
 
-![Anchor Loom running with its original sample animation](assets/preview.jpg)
+![Original and aligned motion in Anchor Loom 1.1](assets/before-after.gif)
 
 ## What it does
 
@@ -13,12 +13,14 @@ consistent sprite sheet without sending your artwork to a server.
 - Aligns frames by visible bottom-center or center, or preserves their placement.
 - Provides per-frame pixel offsets, previous-frame overlays, and 1–30 FPS playback.
 - Exports individual PNG frames, a grid sheet, and generic JSON coordinates.
+- Includes Godot 4, Phaser 3, PixiJS and Roblox export files, with engine setup notes.
+- Offers English and Korean interfaces, plus optional command-line and local MCP tools.
 - Saves editable projects containing source images and offsets.
 - Runs locally in a desktop browser with no external dependencies or subscription.
 
 ## Status
 
-Version 1.0 is available on itch.io for **$5 USD**.
+Version 1.1 is available on itch.io for **$3.99 USD** (one-time purchase).
 
 [Buy Anchor Loom on itch.io](https://nasi-tools.itch.io/anchor-loom)
 
@@ -29,12 +31,12 @@ and paid distribution package are not included here.
 ## Start after download
 
 1. Download the ZIP from itch.io and extract the whole folder.
-2. Open `index.html` in desktop Chrome or Edge. Keep `core.js` and `app.js` beside it.
+2. Open `index.html` in desktop Chrome or Edge. Keep all extracted files together.
 3. Click **Load sample animation**, then **Play**, to try the included example.
 4. Import your PNG frames or a uniformly divided sheet. Compare original and aligned motion, then adjust individual X/Y offsets if needed.
 5. Choose **Export PNG + frames ZIP** for the output. Use **Save editable project** before closing if you want to resume later.
 
-No terminal commands or Node.js installation are needed. The GitHub download
+The browser app needs no terminal commands or Node.js installation. Optional CLI and MCP features require Node.js 18 or later. The GitHub download
 contains this showcase, not the paid application; use the itch.io purchase link above.
 
 ## Important limitations
@@ -47,8 +49,8 @@ Export retains source pixels without cropping or resampling.
 - Up to 200 frames, 4 million pixels per input image, and 24 million source pixels total.
 - Output limits: 4096 pixels per frame side, 32 million output-frame pixels total,
   and 8192 pixels per atlas side.
-- Generic JSON metadata; no engine-specific importer is included.
-- Tested in a Chromium-based browser on Windows. Other operating systems remain unverified.
+- Engine export files are included; Unity and Roblox Studio setup was documented but not tested inside those editors.
+- Tested in Chromium-based browsers on Windows and macOS, and Safari on macOS.
 - Work is not automatically saved. Save an editable project before closing.
 
 ## Development and feedback
@@ -61,4 +63,3 @@ operating system, input dimensions and steps, but do not upload private or
 unlicensed artwork. No response-time or future-feature guarantee is offered.
 
 This repository does not grant a license to the commercial application.
-
