@@ -41,14 +41,14 @@ Keep editable offsets so you can revisit alignment decisions without repeating t
 - Compare original and adjusted animation.
 - Choose visible bottom-center, visible center, or unchanged placement.
 - Apply per-frame X/Y offsets.
-- Export PNG frames, a grid sprite sheet, and generic JSON coordinates.
+- Export PNG frames, a grid sprite sheet, generic JSON coordinates, and optional engine-oriented files for Godot 4, Phaser 3, PixiJS, and Roblox.
 - Save an editable project.
 
 It is a paid product; the [public repository](../README.md) is a showcase and issue tracker, **not** the application download. The current README lists input limits and tested browsers.
 
 ### When it is not a fit
 
-The current tool supports still PNG input, not GIF/video import. Alpha-bound alignment can flatten intentional motion. Its metadata is generic rather than engine-specific. See the README for detailed size limits and other constraints.
+The current tool supports still PNG input, not GIF/video import. Alpha-bound alignment can flatten intentional motion. Engine-oriented export files do not guarantee a one-click import; Unity and Roblox Studio setup has been documented but not tested inside those editors. See the README for detailed limits and tested browsers.
 
 ---
 
