@@ -1,9 +1,11 @@
-# Anchor Loom
+# Anchor Loom — Offline PNG Sprite Frame Alignment
 
-**An offline workspace for aligning PNG animation frames.**
+**Align transparent PNG animation frames, preview motion, and export sprite sheets in a desktop browser.**
 
-Compare original and aligned motion, adjust individual frames, and export a
-consistent sprite sheet without sending your artwork to a server.
+Anchor Loom helps sprite artists and indie game developers inspect unwanted frame-to-frame jitter, compare original and adjusted playback, and fine-tune offsets locally. Automatic alignment needs review to preserve intentional motion.
+
+**[Get Anchor Loom on itch.io — $3.99 USD](https://nasi-tools.itch.io/anchor-loom)**
+
 
 ![Original and aligned motion in Anchor Loom 1.1](assets/before-after.gif)
 
@@ -20,13 +22,15 @@ consistent sprite sheet without sending your artwork to a server.
 
 ## Status
 
-Version 1.1 is available on itch.io for **$3.99 USD** (one-time purchase).
-
-[Buy Anchor Loom on itch.io](https://nasi-tools.itch.io/anchor-loom)
+Version 1.1 is available on itch.io for **$3.99 USD** (purchase link above).
 
 The application has passed local core and browser workflow checks. This repository
 contains the product showcase and issue tracker. The commercial application source
 and paid distribution package are not included here.
+
+## Free guide: stop unwanted sprite jitter
+
+Before buying a tool, follow the [PNG animation alignment checklist](docs/png-sprite-animation-alignment-guide.md) to identify whether the problem is alignment jitter or intentional motion. The checklist is free and does not require an account.
 
 ## Start after download
 
