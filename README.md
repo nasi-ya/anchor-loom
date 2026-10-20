@@ -4,7 +4,7 @@
 
 Anchor Loom helps sprite artists and indie game developers inspect unwanted frame-to-frame jitter, compare original and adjusted playback, and fine-tune offsets locally. Automatic alignment needs review to preserve intentional motion.
 
-**[Get Anchor Loom on itch.io — $3.99 USD](https://nasi-tools.itch.io/anchor-loom)**
+**[Get Anchor Loom on itch.io — $1.00 USD](https://nasi-tools.itch.io/anchor-loom)**
 
 
 ![Original and aligned motion in Anchor Loom 1.1](assets/before-after.gif)
@@ -22,7 +22,7 @@ Anchor Loom helps sprite artists and indie game developers inspect unwanted fram
 
 ## Status
 
-Version 1.1 is available on itch.io for **$3.99 USD** (purchase link above).
+Version 1.1 is available on itch.io for **$1.00 USD** (purchase link above).
 
 The application has passed local core and browser workflow checks. This repository
 contains the product showcase and issue tracker. The commercial application source
