@@ -14,6 +14,16 @@ Keep an untouched copy of your frames. Confirm the order and preview the animati
 
 Alignment only addresses the first of these.
 
+## Quick test: is the jitter in the PNG frames or the game engine?
+
+Before changing the art, preview the original PNG sequence at a fixed canvas position, with the same frame order and speed as in the game.
+
+- **It shakes in the standalone preview too:** inspect transparent padding, visible bottom-center or center alignment, and frame-by-frame offsets. Check that the original files all use the intended canvas size.
+- **It looks steady in the preview but shakes in-game:** check the engine's sprite origin/pivot, trimming or packing settings, scaling, and camera movement before editing the PNGs. Changing source-frame alignment may not fix an engine-side issue.
+- **Only a jump, recoil, or bounce looks different:** preserve that intentional movement. Use manual offsets rather than forcing every silhouette to the same anchor.
+
+For a sprite sheet, also verify that each cell is divided at the intended width and height. A wrong grid can look like alignment jitter even when the original frames are consistent.
+
 ## 2. Choose an anchor
 
 For a standing or walking character, a visible **bottom-center** point is a useful starting point. For centered effects or rotating objects, **visible center** may work better. When the original layout contains deliberate motion, **preserve placement** and make small manual adjustments instead.
