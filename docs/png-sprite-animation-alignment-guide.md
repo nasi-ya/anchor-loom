@@ -24,6 +24,19 @@ Before changing the art, preview the original PNG sequence at a fixed canvas pos
 
 For a sprite sheet, also verify that each cell is divided at the intended width and height. A wrong grid can look like alignment jitter even when the original frames are consistent.
 
+## Aseprite → Godot: reduce the canvas without shifting poses
+
+If an Aseprite animation has large transparent margins and looks oversized or offset in Godot's AnimatedSprite2D, avoid trimming every exported frame independently.
+
+1. Work on a copy of the Aseprite project and keep all animation tags together.
+2. Set one shared canvas size with **Sprite → Canvas Size**, or make a selection that covers the intended shared rectangle and use **Sprite → Crop**. See the [official Aseprite canvas documentation](https://aseprite.org/docs/canvas).
+3. Choose bounds large enough for the widest pose across every tag, including attacks, weapons, jumps, and effects. Do not crop tightly around the walking pose if another animation needs more room.
+4. Scrub through every tag after cropping. Check that frames still have identical dimensions and that the character's feet or chosen pivot remain at the same pixel coordinates. Keep enough transparent space for the largest pose.
+5. Export again and compare the PNG sequence at a fixed canvas position before importing it into Godot.
+6. If the standalone sequence is stable but Godot still shifts, inspect the AnimatedSprite2D origin/pivot, frame dimensions, trimming/packing, scaling, and horizontal flipping. A shared canvas crop alone does not diagnose every engine-side offset.
+
+Aseprite notes that changing canvas size also changes slice positions, so recheck any slices after resizing.
+
 ## 2. Choose an anchor
 
 For a standing or walking character, a visible **bottom-center** point is a useful starting point. For centered effects or rotating objects, **visible center** may work better. When the original layout contains deliberate motion, **preserve placement** and make small manual adjustments instead.
