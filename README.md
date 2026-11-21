@@ -30,7 +30,7 @@ and paid distribution package are not included here.
 
 ## Free guide: stop unwanted sprite jitter
 
-Before buying a tool, follow the [PNG animation alignment checklist](docs/png-sprite-animation-alignment-guide.md) to identify whether the problem is alignment jitter or intentional motion. The checklist is free and does not require an account.
+Before buying a tool, follow the free [PNG sprite animation alignment checklist](docs/png-sprite-animation-alignment-guide.md), including its Aseprite → Godot shared-canvas and pivot workflow, to distinguish unwanted frame jitter from intentional motion or engine-side offsets. No account is required.
 
 ## Start after download
 
