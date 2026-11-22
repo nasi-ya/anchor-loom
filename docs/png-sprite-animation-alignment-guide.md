@@ -1,4 +1,6 @@
-# Fix jitter in PNG sprite animations: an alignment checklist
+# Aseprite to Godot sprite alignment: reduce large canvases without frame jitter
+
+If an Aseprite animation imports into Godot's AnimatedSprite2D with oversized transparent margins or shifting poses, this checklist explains how to reduce one shared canvas without trimming every frame independently.
 
 Small changes in a sprite's position between PNG frames can make an otherwise smooth animation look shaky. Before redrawing the artwork, check whether the visible subject is anchored consistently.
 
