@@ -26,6 +26,14 @@ Before changing the art, preview the original PNG sequence at a fixed canvas pos
 
 For a sprite sheet, also verify that each cell is divided at the intended width and height. A wrong grid can look like alignment jitter even when the original frames are consistent.
 
+## Godot per-frame pivot metadata is separate from PNG alignment
+
+Godot's standard `AnimatedSprite2D` uses a `SpriteFrames` resource for animation textures and exposes `offset` as a `Vector2` drawing offset on the AnimatedSprite2D node. That documented offset belongs to the node; the standard AnimatedSprite2D API does not expose a separate `Vector2` pivot field for every frame. See the [Godot AnimatedSprite2D API](https://docs.godotengine.org/en/stable/classes/class_animatedsprite2d.html).
+
+If each texture needs its own pivot value, treat that as a separate metadata/import/runtime workflow. A custom resource or importer, or an explicitly animated offset, may be needed; verify how your project stores and applies those values. A shared canvas and per-frame PNG placement offsets can stabilize the pixels, but they do not by themselves create per-frame pivot metadata. Godot has a separate [proposal to add pivot data to textures](https://github.com/godotengine/godot-proposals/issues/14824).
+
+Anchor Loom's public feature description covers PNG frame alignment, per-frame X/Y placement offsets, and engine-oriented export files. It does not currently document a per-frame Godot pivot field, so inspect the generated Godot output in your project before relying on it for that workflow.
+
 ## Aseprite → Godot: reduce the canvas without shifting poses
 
 If an Aseprite animation has large transparent margins and looks oversized or offset in Godot's AnimatedSprite2D, avoid trimming every exported frame independently.
