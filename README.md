@@ -30,7 +30,7 @@ and paid distribution package are not included here.
 
 ## Free guide: stop unwanted sprite jitter
 
-If an Aseprite animation imports into Godot with oversized transparent margins or shifting poses, follow the free [Aseprite → Godot large-canvas alignment checklist](docs/png-sprite-animation-alignment-guide.md). It explains how to reduce a shared canvas without shifting frames, then distinguish PNG frame jitter from intentional motion or engine-side offsets. No account is required.
+If an Aseprite animation imports into Godot with oversized transparent margins, shifting poses, or questions about per-frame pivot metadata, follow the free [Aseprite → Godot large-canvas, frame-alignment and pivot-metadata checklist](docs/png-sprite-animation-alignment-guide.md). It explains how to reduce a shared canvas without shifting frames, distinguish PNG frame jitter from intentional motion or engine-side offsets, and understand the separate per-frame pivot workflow. No account is required.
 
 ## Start after download
 
